@@ -1,0 +1,475 @@
+{
+  "info": {
+    "_postman_id": "27429828-a51a-4ff3-b467-b24280f4c366",
+    "name": "expressCollection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "56062714",
+    "_collection_link": "https://go.postman.co/collection/56062714-27429828-a51a-4ff3-b467-b24280f4c366?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "getAll",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [
+        {
+          "name": "getAll",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:3000/user/",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "user",
+                ""
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "173"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"ad-60NeoNC9bG5W6rjBEy2Fv1ybVJk\""
+            },
+            {
+              "key": "Date",
+              "value": "Mon, 29 Jun 2026 10:34:08 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "[\n    {\n        \"id\": 1,\n        \"name\": \"ahmed\",\n        \"age\": 29,\n        \"email\": \"we@gmail.com\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"omar\",\n        \"age\": 23,\n        \"email\": \"u273w@gmail.com\"\n    },\n    {\n        \"id\": 3,\n        \"name\": \"hamed\",\n        \"age\": 22,\n        \"email\": \"987w@gmail.com\"\n    }\n]"
+        }
+      ]
+    },
+    {
+      "name": "getByName",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [
+        {
+          "name": "getByName",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:3000/user/getByName?name=omar",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "user",
+                "getByName"
+              ],
+              "query": [
+                {
+                  "key": "name",
+                  "value": "omar"
+                }
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "57"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"39-rbmpRpOZZRmW55BThsmibP8tmy8\""
+            },
+            {
+              "key": "Date",
+              "value": "Mon, 29 Jun 2026 10:34:48 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"id\": 2,\n    \"name\": \"omar\",\n    \"age\": 23,\n    \"email\": \"u273w@gmail.com\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "getUserID",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [
+        {
+          "name": "getUserID",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:3000/user/3",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "user",
+                "3"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "57"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"39-rDW2JHdVKmzZOyEnKsqkO4MhghA\""
+            },
+            {
+              "key": "Date",
+              "value": "Mon, 29 Jun 2026 10:35:19 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"id\": 3,\n    \"name\": \"hamed\",\n    \"age\": 22,\n    \"email\": \"987w@gmail.com\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "addUser",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [
+        {
+          "name": "addUser",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"id\":4,\r\n    \"name\":\"mahmoud\",\r\n    \"age\": 26,\r\n    \"email\": \"9yyehdw@gmail.com\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:3000/user/",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "user",
+                ""
+              ]
+            }
+          },
+          "status": "Conflict",
+          "code": 409,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "22"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"16-gRGKxGnEXCgKeW2DkAtxDt75TJ0\""
+            },
+            {
+              "key": "Date",
+              "value": "Mon, 29 Jun 2026 10:36:47 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "\"Email already exists\""
+        }
+      ]
+    },
+    {
+      "name": "deleteUser",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [
+        {
+          "name": "deleteUser",
+          "originalRequest": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "localhost:3000/user/4",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "user",
+                "4"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "110"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"6e-TodG1zwGn/RP+cwl9vtNdAZ6jaU\""
+            },
+            {
+              "key": "Date",
+              "value": "Mon, 29 Jun 2026 10:38:29 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"message\": \"This user has been deleted\",\n    \"user\": {\n        \"id\": 4,\n        \"name\": \"mahmoud\",\n        \"age\": 26,\n        \"email\": \"9yyehdw@gmail.com\"\n    }\n}"
+        }
+      ]
+    },
+    {
+      "name": "filter",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [
+        {
+          "name": "filter",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "localhost:3000/user/filter?age=22",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "user",
+                "filter"
+              ],
+              "query": [
+                {
+                  "key": "age",
+                  "value": "22"
+                }
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "234"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"ea-tdTCdZ0gOu01aLW+vHfcdGU3Cz4\""
+            },
+            {
+              "key": "Date",
+              "value": "Mon, 29 Jun 2026 10:39:38 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "[\n    {\n        \"id\": 1,\n        \"name\": \"ahmed\",\n        \"age\": 29,\n        \"email\": \"we@gmail.com\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"omar\",\n        \"age\": 23,\n        \"email\": \"u273w@gmail.com\"\n    },\n    {\n        \"id\": 3,\n        \"name\": \"hamed\",\n        \"age\": 22,\n        \"email\": \"987w@gmail.com\"\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Yasmeen\",\n        \"age\": 23,\n        \"email\": \"oumem@gmail.com\"\n    }\n]"
+        }
+      ]
+    },
+    {
+      "name": "editUser",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": [
+        {
+          "name": "editUser",
+          "originalRequest": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\":\"mariam\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:3000/user/3",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "user",
+                "3"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "X-Powered-By",
+              "value": "Express"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=utf-8"
+            },
+            {
+              "key": "Content-Length",
+              "value": "105"
+            },
+            {
+              "key": "ETag",
+              "value": "W/\"69-cxqeaGaf4pJf44mkg6jGPGUUYCo\""
+            },
+            {
+              "key": "Date",
+              "value": "Mon, 29 Jun 2026 10:43:30 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=5"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"message\": \"This user has been edited\",\n    \"user\": {\n        \"id\": 3,\n        \"name\": \"mariam\",\n        \"age\": 22,\n        \"email\": \"987w@gmail.com\"\n    }\n}"
+        }
+      ]
+    }
+  ]
+}
